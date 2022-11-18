@@ -1,0 +1,49 @@
+{
+    "@context": ["http://www.w3.org/ns/td"],
+    "@type": "tm:ThingModel",
+    "title": "Lamp Thing Model",
+    "description": "Lamp Thing Description Model",
+    "properties": {
+        "status": {
+            "title": "Light status",
+            "titles": {
+                "de": "Lampenstatus",
+                "en": "Light status"
+            },
+            "description": "current status of the lamp (on|off)",
+            "descriptions": {
+                "de": "Aktueller Lampenstatus",
+                "en": "current status of the lamp (on|off)"
+            },
+            "type": "string",
+            "readOnly": true
+        }
+    },
+    "actions": {
+        "toggle": {
+            "title": "Toggle light",
+            "titles": {
+                "de": "Lampe ein/aus",
+                "en": "Toggle light"
+            },
+            "description": "Turn the lamp on or off",
+            "descriptions": {
+                "de": "Schalte die Lampe aus und an",
+                "en": "Turn the lamp on or off"
+            }
+        },
+        "rmtoggle": {
+            "title": "Enable/disable toggle",
+            "titles": {
+                "de": "aus/an",
+                "en": "Enable/disable toggle"
+            },
+            "description": "Turns on/off the toggle endpoint",
+            "descriptions": {
+                "de": "Schaltet den toggle-Endpunkt aus/an",
+                "en": "Turns on/off the toggle endpoint"
+            }
+        }
+    },
+    "events": {}
+}

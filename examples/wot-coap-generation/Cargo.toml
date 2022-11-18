@@ -1,0 +1,25 @@
+[package]
+name = "wot-coap-generation"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+riot-wrappers = "0.8.0"
+riot-wot-sys = { path = "../.." }
+embedded-hal = "0.2.7"
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
+# fragile = "2.0.0"
+
+[dev-dependencies]
+coap = "0.12.0"

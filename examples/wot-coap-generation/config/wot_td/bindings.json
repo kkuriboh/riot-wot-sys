@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "status": {
+      "forms": [
+        {
+          "riot_os:handler_function": "led_status_handler",
+          "href": "/led/status"
+        }
+      ]
+    }
+  },
+  "actions": {
+    "toggle": {
+      "forms": [
+        {
+          "riot_os:handler_function": "led_toggle_handler",
+          "href": "/led/toggle"
+        }
+      ]
+    },
+    "rmtoggle": {
+      "forms": [
+        {
+          "riot_os:handler_function": "remove_add_endpoint_handler",
+          "href": "/led/rmtoggle"
+        }
+      ]
+    }
+  }
+}

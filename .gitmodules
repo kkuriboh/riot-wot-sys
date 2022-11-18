@@ -1,0 +1,4 @@
+[submodule "riotos"]
+	path = riotos
+	url = https://github.com/namib-project/RIOT.git
+	branch = wot_gcoap
